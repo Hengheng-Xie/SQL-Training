@@ -185,6 +185,7 @@ WITH fac_mon AS (SELECT strftime('%m', starttime) AS month,
 FROM Bookings AS b
 LEFT JOIN Facilities AS f
 ON b.facid = f.facid
+WHERE b.memid != 0
 GROUP BY  month, name)
 
 SELECT month,

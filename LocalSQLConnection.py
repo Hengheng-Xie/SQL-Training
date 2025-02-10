@@ -27,9 +27,22 @@ def select_all_tasks(conn):
     cur = conn.cursor()
     
     query1 = """
-        SELECT *
-        FROM FACILITIES
-        """
+WITH fac_mem AS (SELECT full_name,
+       name AS facility
+FROM Bookings AS b
+LEFT JOIN Facilities AS f
+ON b.facid = f.facid
+LEFT JOIN (SELECT surname || ' ' || firstname as full_name,
+                  memid
+           FROM Members
+           )AS m
+ON b.memid = m.memid
+WHERE b.memid != 0
+GROUP BY  full_name, name)
+
+SELECT full_name,
+       GROUP_CONCAT(facility) AS facs_by_member
+FROM fac_mem;"""
     cur.execute(query1)
  
     rows = cur.fetchall()
