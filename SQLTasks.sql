@@ -1,20 +1,7 @@
 /* Welcome to the SQL mini project. You will carry out this project partly in
 the PHPMyAdmin interface, and partly in Jupyter via a Python connection.
 
-This is Tier 1 of the case study, which means that there'll be more guidance for you about how to 
-setup your local SQLite connection in PART 2 of the case study. 
-
-The questions in the case study are exactly the same as with Tier 2. 
-
 PART 1: PHPMyAdmin
-You will complete questions 1-9 below in the PHPMyAdmin interface. 
-Log in by pasting the following URL into your browser, and
-using the following Username and Password:
-
-URL: https://sql.springboard.com/
-Username: student
-Password: learn_sql@springboard
-
 The data you need is in the "country_club" database. This database
 contains 3 tables:
     i) the "Bookings" table,
@@ -140,10 +127,6 @@ Make sure that the SQLFiles folder containing thes files is in your working dire
 that you haven't changed the name of the .db file from 'sqlite\db\pythonsqlite'.
 
 You should see the output from the initial query 'SELECT * FROM FACILITIES'.
-
-Complete the remaining tasks in the Jupyter interface. If you struggle, feel free to go back
-to the PHPMyAdmin interface as and when you need to. 
-
 You'll need to paste your query into value of the 'query1' variable and run the code block again to get an output.
  
 QUESTIONS:

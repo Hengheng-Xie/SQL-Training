@@ -2,8 +2,7 @@
 
 ## Work locally via Python + SQLite
 
-If you want to try work locally by executing your SQL queries directly on the `sqlite_db_pythonsqlite.db` database file then you can work with the `LocalSQLConnection.py` python script. Open the file `SQLTasks Tier 1.sql` for more a list of the questions we want to try answer.
-
+If you want to try work locally by executing your SQL queries directly on the `sqlite_db_pythonsqlite.db` database file then you can work with the `LocalSQLConnection.py` python script. 
 There is already an example query in the file so if you just run the python script you should see something like:
 
 ```
@@ -29,6 +28,6 @@ Results should look like:
 If you see this then things are working and you should be able to edit the file to add in any queries you want. 
 
 
-## Work online via https://sql.springboard.com/
 
-If you want to just log in somewhere and write SQL (no python involved) then you can go to https://sql.springboard.com/ log in with Username=student and Password=learn_sql@springboard and write and work on your SQL queries in there. Open the file `SQLTasks Tier 1.sql` for more a list of the questions we want to try answer and more information and instructions.
+
+
